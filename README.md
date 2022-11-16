@@ -1,1 +1,171 @@
 # hpbd
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+    <div class="wrap">
+        <input type="checkbox" checked>
+        <ul>
+          <li><p>Hí Badxmeow Happy birth day nè:3. Đại ca lớn rồi bớt bớt đòi quánh e đi nha. Thêm 1 tuổi mới xinh hơn nè, học giỏi hơn nè , lun lun vui tươi nhó:3 sớm tìm đc a ny nữa:v 
+           và Nếu như có một ngày bất ổn thì vẫn có bé cua sẵn lòng san sẻ với meow nè. Chúc mừng sinh nhật Badxmeow nhó!! (Câu sau là văn mẫu á=)) em không viết đc mấy lời hoa mỹ thế đou:V) </p></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>	
+    </div>
+    <!-- <div class="credits">
+      <a target="_blank" href="https://codepen.io/emoreno911">@emoreno911</a>
+    <div> -->
+</body>
+</html>
+
+body {
+    background: #444;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .credits {
+    text-align: right;
+    margin-top: 15px;
+  }
+  .credits a {
+    color: #222;
+    background-color: #f8dc3d;
+    font-family: "Segoe UI", "Ubuntu", monospace;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 2px 10px;
+    border-radius: 4px;
+  }
+  
+  ul {
+    position: absolute;
+    list-style: none;
+    max-width: 1200px;
+    min-width: 1200px;
+    margin: 0 auto;
+  }
+  ul li {
+    position: relative;
+    float: left;
+    width: 16.666%;
+    height: 600px;
+    opacity: 0.4;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  ul > li > p{
+    display: none;
+    position: relative;
+    top: -350px;
+    left: 300px;
+    color: rgb(185, 150, 150);
+    font-size: 18px;
+  }
+  ul li:hover > p{
+    display:block;
+  }
+  ul li:hover, ul li:first-child ~ li:last-child,ul li p {
+    width: 50%;
+    opacity: 1;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  ul li:hover ~ li:last-child {
+    width: 16.666%;
+    opacity: 0.4;
+  }
+  ul li:nth-child(1) {
+    background: url("./img/310931134_3344016462548120_8084641476517233331_n.jpg") top right no-repeat;
+  }
+  ul li:nth-child(2) {
+    background: url("./img/305885076_2269486173219487_3094175845973449379_n.jpg") left center no-repeat;
+  }
+  ul li:nth-child(3) {
+    background: url("./img/img.jpg") center no-repeat;
+  }
+  ul li:nth-child(4) {
+    background: url("./img/111.jpg")  center no-repeat;
+  }
+  
+  ul li::before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;   
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  ul li:nth-child(1)::before {
+    background-color: rgba(255, 87, 34, 0.2);
+  }
+  ul li:nth-child(2)::before {
+    background-color: rgba(76, 175, 80, 0.25);
+  }
+  ul li:nth-child(3)::before {
+    background-color: rgba(33, 150, 243, 0.25);
+  }
+  ul li:nth-child(4)::before {
+    background-color: rgba(156, 39, 176, 0.2);
+  }
+  
+  /* input:checked ~ ul li::before {
+    width: 100%;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  } */
+  
+  /* input[type="checkbox"] {
+    width: 555px;
+    margin: 15px;
+    font-family: "Segoe UI", "Ubuntu", monospace;
+    color: white;
+  }
+  input[type="checkbox"]::before {
+    content: "Pure CSS Accordion";
+    font-size: 1.5em;
+    position: relative;
+    top: -10px;
+  }
+  input[type="checkbox"]::after {
+    content: "Filters Enabled";
+    color: #caa;
+    position: relative;
+    top: -10px;
+    left: 5px;
+  }
+  
+  /** Layout fixes **/
+  /* .credits a {
+    margin-right: calc((100% - 1230px) / 2);
+  } 
+  
+  input[type="checkbox"] {
+    margin-left: calc((100% - 1160px) / 2);
+  } */
+  
+  @media (max-width: 1240px) {
+    .credits a {
+      margin-right: 0px;
+    }
+  
+    input[type="checkbox"] {
+      margin-left: 35px;
+    }
+  }
+  
